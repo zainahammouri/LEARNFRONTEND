@@ -1,0 +1,40 @@
+/* styling order List And uorder list using class and id */
+#un1{
+    background-color: rgb(130, 98, 159);
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+
+}
+.olc{
+    background-color: yellow;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    margin-top: 50px;
+}
+.olc>a{
+   color: purple;
+}
+/* Div Styling */
+.ds{
+    color: red;
+    background-color: black;
+    margin: auto;
+    padding: 2px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.nav{
+    padding: 10px;
+    margin: auto;
+    color: black;
+    background-color: blue;
+    margin-top: 20px;
+    font-size: 40px;
+
+}
+.nav>a{
+    color: yellow;
+    margin-left: 100px;
+}
