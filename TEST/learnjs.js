@@ -90,4 +90,62 @@ console.log(typeof myName);
         console.log(arr3[1].age);
         console.log(arr3[0].name);
         console.log(arr3[1].name);
-    
+// if statment in js
+    // if (condition) {
+        // code block
+    // }
+    // else {
+        // code block
+    // }
+    // else if (condition) {
+        // code block
+    // }
+    // else {
+        // code block
+    // }
+var x=-5;
+
+if(x>0){
+    console.log("x is positive");
+}
+else{
+    console.log("x is negative");
+}
+// switch statement in js
+    // switch (condition) {
+        // case 1:
+            // code block
+        // break;
+        // case 2:
+            // code block
+        // break;
+        // case 3:
+            // code block
+        // break;
+        // default:
+            // code block
+    // }
+var choice =3;
+
+switch (choice) {
+    case 1:
+        console.log("one");
+        break;
+        case 2:
+            console.log("two");
+            break;
+            case 3:
+                console.log("three");
+                break;
+                default:
+                    console.log("default");
+                    break;
+}
+
+// for loop in js
+    // for (var i = 0; i < 10; i++) {
+        // code block
+    // }
+for (var i = 0; i < 10; i++) {
+    console.log(i);
+}
