@@ -149,3 +149,41 @@ switch (choice) {
 for (var i = 0; i < 10; i++) {
     console.log(i);
 }
+document.getElementsByClassName("test")[0].innerHTML ="Hello";
+console.log(document.getElementsByClassName("test")[0]);
+//function
+    // function myFunction() {
+        // code block
+    // }
+function myFunction() {
+    console.log("Hello");
+}
+// call function
+    // myFunction();
+myFunction();
+function loadingSms(){
+    alert("Hello from function");
+}
+
+// loadingSms();
+// Code example Even or Odd:
+function EvenOrOdd(){
+    let number= document.getElementById("input").value ;
+    if(number % 2 == 0){
+        document.getElementById("result").innerHTML="even";
+    }
+    else{
+        document.getElementById("result").innerHTML="odd";
+    }
+}
+//Code example Prime or not prime
+
+function PrimeOrNotPrime(){
+    let number= document.getElementById("input").value ;
+    if(number % 2 == 0){
+        document.getElementById("result").innerHTML="not prime";
+    }
+    else{
+        document.getElementById("result").innerHTML="prime";
+    }
+}
