@@ -187,3 +187,17 @@ function PrimeOrNotPrime(){
         document.getElementById("result").innerHTML="prime";
     }
 }
+function onclick(){
+    const img=document.querySelector("#img");
+    // img.src="../profilpic.jpg";
+    if(img.src.includes("prof.jpg"))
+    {
+        img.src="../profilpic.jpg";
+}
+else{
+    img.src="../prof.jpg";
+}
+}
+//Adding event listeners:
+const button = document.querySelector("#button");
+button.addEventListener("click", onclick);
