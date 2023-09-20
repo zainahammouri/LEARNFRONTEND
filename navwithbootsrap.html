@@ -145,6 +145,7 @@ rel="stylesheet"
       <h5 class="card-title">Card title</h5>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       <a href="#!" class="btn btn-primary" onclick="clicked(1)">Button</a>
+      <a href="#!" class="btn btn-danger" style="display: none;" onclick="clicked2(1)">Button</a>
     </div>
   </div>
   <div class="card" style="width: 200px; margin: 50px;" >
@@ -153,6 +154,7 @@ rel="stylesheet"
       <h5 class="card-title">Card title</h5>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       <a href="#!" class="btn btn-primary" onclick="clicked(2)">Button</a>
+      <a href="#!" class="btn btn-danger" style="display: none;" onclick="clicked2(2)">Button</a>
     </div>
   </div>
 
@@ -164,7 +166,6 @@ rel="stylesheet"
   src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"
 ></script>
 <script>
-    var counter=0;
     var cheklist=[];
     function clicked(id) {
        for(var i=0;i<cheklist.length;i++){
@@ -176,10 +177,29 @@ rel="stylesheet"
    }
    cheklist.push(id);
     var buttonchange = document.getElementsByClassName("btn btn-primary")[id-1];
+    var buttonchange2=document.getElementsByClassName("btn btn-danger")[id-1];
+    buttonchange2.style.display="block";
     buttonchange.innerHTML="Add to cart";
     buttonchange.style.backgroundColor="green";
     var cartBadge = document.getElementById("CartBadge");
     cartBadge.innerHTML=cheklist.length;
+
+}
+function clicked2(id) {
+       for(var i=0;i<cheklist.length;i++){
+        if(cheklist[i]==id){
+            cheklist.pop();
+        }
+ 
+   }
+    var buttonchange = document.getElementsByClassName("btn btn-primary")[id-1];
+    var buttonchange2=document.getElementsByClassName("btn btn-danger")[id-1];
+    buttonchange2.style.display="none";
+    buttonchange.innerHTML="Button";
+    buttonchange.style.backgroundColor="#3b71ca";
+    var cartBadge = document.getElementById("CartBadge");
+    cartBadge.innerHTML=cheklist.length;
+
 
 }
 
